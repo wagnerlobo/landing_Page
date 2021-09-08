@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="logo">WLobo.</div>
+            <a href="#" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content-section">
+            <h1>Aqui começa a sua caminhada rumo à aprovação!</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                <div class="button">
+                    <a href="">Saiba Mais</a>
+                   
+                </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        const togleBtn = document.getElementsByClassName('toggle-btn')[0]
+        const navmenu = document.getElementsByClassName('nav-menu')[0]
+        togleBtn.addEventListener('clck', () => {
+            navmenu.classList.toggle('active')
+        }
+        )
+
+    </script>
+</body>
+</html>
